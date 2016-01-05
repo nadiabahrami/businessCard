@@ -12,3 +12,16 @@ nav{
   height: 100%;
   /*background-color: blue;*/
 }
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width:90%;
+  border-radius:50%;
+}
