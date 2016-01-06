@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="vendor/style/normalize.css" charset="utf-8">
+    <link rel="stylesheet" href="style/style.css" charset="utf-8">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+    <header>
+      <h1>Nadia Bahrami</h1>
+    </header>
+    <nav>
+      <img src="img/Head.jpg"/>
+      <ul>
+        <li><a href="https://github.com/nadiabahrami">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/nadia-bahrami-3baaa6b3">LinkedIn</a></li>
+        <li><a href="https://twitter.com/nadiesel">Twitter</a></li>
+      </ul>
+    </nav>
+    <section id="articles">
+      <article class="template" data-category="cat">
+        <header>
+          <h1 id= 'title'></h1>
+          <div class="colab"></div>
+          <div class="date"></div>
+          <div class="url"></div>
+        </header>
+        <section class="description"></section>
+      </article>
+    </section>
+    <footer>
+      &copy; 2016 Nadia Bahrami
+    </footer>
+    <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src ="js/app.js"></script>
   </body>
 </html>
