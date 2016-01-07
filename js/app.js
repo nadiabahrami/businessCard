@@ -13,7 +13,7 @@ var jobs = [
     collaborators: 'none',
     projectURL: 'http://nadiabahrami.github.io/cookie-stand',
     releaseDate: '12-13-15',
-    description: 'This is an example of a websit for a buisness that is selling salmon based cookies.   It has an tool rendering sales numbers that is not attached to the public facing sight.   Please see the rep for that site under the folder "internal-docs".'
+    description: 'This is an example of a website for a buisness that is selling salmon based cookies.   It has an tool rendering sales numbers that is not attached to the public facing sight.   Please see the repo for that site under the folder "internal_docs".  This was an inital go at dyanmically creating html objects using javascript.   This was an intial attempt at css'
   }
 ];
 
@@ -32,9 +32,9 @@ Article.prototype.toHtml = function() {
   var $newArticle = $('article.template').clone();
   $newArticle.find('#title').html(this.title);
   $newArticle.find('.date').html(this.releaseDate);
-  $newArticle.find('.colab').html('Collaborators: '+this.collaborators);
-  $newArticle.find('.url').html('Project URl: '+this.projectURL);
-  $newArticle.find('.description').html('Project Description: '+this.description);
+  $newArticle.find('.colab').html('<strong>Collaborators: </strong>'+this.collaborators);
+  $newArticle.find('.url').html('<strong>Project URl: </strong>'+this.projectURL);
+  $newArticle.find('.description').html('<strong>Project Description:</strong>'+this.description);
 
 
 
