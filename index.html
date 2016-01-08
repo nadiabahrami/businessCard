@@ -11,23 +11,22 @@
     <header id="top">
       <h1>Nadia Bahrami</h1>
       <section id="social">
-        <a href="https://github.com/nadiabahrami">Github</a>
-        <a href="https://www.linkedin.com/in/nadia-bahrami-3baaa6b3">LinkedIn</a>
-        <a href="https://twitter.com/nadiesel">Twitter</a>
+        <a href="https://github.com/nadiabahrami"><img src="img/github12.png"/></a>
+        <a href="https://www.linkedin.com/in/nadia-bahrami-3baaa6b3"><img src="img/link94.png"/></a>
+        <a href="https://twitter.com/nadiesel"><img src="img/twitter2.png"/></a>
       </section>
     </header>
     <div id="lefty">
-      <nav>
+      <nav class="main-nav">
         <img src="img/Head.jpg"/>
         <ul>
-          <li>About</li>
-          <li>Projects</li>
+          <li class="tab" data-content="about"><a href="#">About</a></li>
+          <li class="tab" data-content="articles"><a href="#">Projects</a></li>
           <li>Work Experience</li>
         </ul>
       </nav>
     </div>
-    <section id="articles">
-    <!--Add the option filters here -->
+    <section class="tab-content" id="articles">
       <article class="template" data-category="cat">
         <header>
           <h1 id= 'title'></h1>
@@ -38,11 +37,11 @@
         <section class="description"></section>
       </article>
     </section>
-    <section id="about">
+    <section class = "tab-content" id="about">
       <h2>The Story So Far....</h2>
-      <p>Nadia has a vast history and knoweldge base in the molecular biology field, researching cures for chronic kidney disease, organ regeneration, and cancer immunotherapy.</p>
+      <p>Nadia has a vast history and knoweldge base in the molecular biology field, previously researching cures for chronic kidney disease, organ regeneration, and cancer immunotherapy.</p>
       <p>During that time the discrepancy between the ability to do research and communicate to the computer people to make the tools for research was difficult to bridge so Nadia decided to go back to school to learn programing</p>
-      <p>So far she had learned HTML, Javascript, and CSS, and is continue to learn and develop as a programer.  Click on projects to see hat she has done so far!</p>
+      <p>So far she had learned HTML, Javascript, and CSS, and is continue to learn and develop as a programer.  Click on projects to see eamples of what she has done so far!</p>
     </section>
     <footer>
       &copy; 2016 Nadia Bahrami
@@ -50,5 +49,6 @@
     <script src="vendor/jquery-2.1.4.min.js"></script>
     <script src="js/projects.js"></script>
     <script src ="js/app.js"></script>
+    <script src="js/view.js"></script>
   </body>
 </html>

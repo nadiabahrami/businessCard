@@ -43,6 +43,12 @@ img{
   border-radius:50%;
 }
 
+a img{
+  width:2em;
+  border-radius:0px;
+}
+
 footer{
+  background-color:#00DE6D;
   clear:left;
 }
