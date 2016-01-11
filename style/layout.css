@@ -1,0 +1,38 @@
+.pURL{
+  font-size:1em;
+}
+
+a img{
+  width:2em;
+  border-radius:0px;
+}
+
+#social a {
+  font-size:.8em;
+  display:block;
+}
+
+#social {
+  margin:1%;
+}
+
+#top {
+  background-color:#00DE6D;
+  /*position:absolute;*/
+  display: flex;
+  justify-content: space-between;
+}
+
+#title{
+  color:#592684;
+  font-family: 'Overlock SC', cursive;
+}
+
+#top h1{
+  margin:0px;
+  padding:1%;
+  font-family: 'Overlock SC', cursive;'
+  color:#1B222B;
+  align-self: center;
+  font-size: 2.6em;
+}

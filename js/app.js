@@ -10,15 +10,11 @@ function Article (opts){
 };
 
 Article.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
-  $newArticle.find('#title').html(this.title);
-  $newArticle.find('.date').html(this.releaseDate);
-  $newArticle.find('.colab').html('<strong>Collaborators: </strong>'+this.collaborators);
-  $newArticle.find('.url').html('<strong>Project URl: </strong>'+this.projectURL);
-  $newArticle.find('.description').html('<strong>Project Description:</strong>'+this.description);
-  $newArticle.append('<hr>');
-  $newArticle.removeClass('template');
-  return $newArticle;
+  var appTemplate = $('#ourBuild').html();
+  var compiledTemplate = Handlebars.compile(appTemplate);
+  var html = compiledTemplate(this);
+  $('#articles').append(html);
+
 };
 
 projects.forEach(function(ele) {
