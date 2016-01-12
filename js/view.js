@@ -10,13 +10,13 @@ articleView.handleMainNav = function() {
 };
 
 articleView.menuHide = function(){
-  if($(document).width()<640){
-    $('nav').hide();
+  // if($(document).width()<640){
+    // $('nav').hide();
     $('#menu').on('click', function(event){
       event.preventDefault();
       $('nav').slideToggle();
     });
-  }
+  // }
 };
 
 $(document).ready( function() {
@@ -24,8 +24,8 @@ $(document).ready( function() {
   articleView.menuHide();
 });
 
-$(window).resize(function() {
-  if ($(document).width()>640){
-    $('nav').show();
-  }
-});
+// $(window).resize(function() {
+//   if ($(document).width()>640){
+//     $('nav').show();
+//   }
+// });
