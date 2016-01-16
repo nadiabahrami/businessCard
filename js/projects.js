@@ -1,15 +1,15 @@
 var projects = [
   {
     title: 'MLBucket list',
-    author: 'Nadiaawesome',
-    collaborators: 'Paul Sheridan, Kate Zurlo_Cuva, Shelly Y',
+    author: 'Nadia Bahrami',
+    collaborators: 'Paul Sheridan, Kate Zurlo-Cuva, Shelly Y',
     projectURL: 'http://nadiabahrami.github.io/bucketlist',
     releaseDate: '12-29-15',
     description: 'MLBucketlist is a web app that allows the user to route a map to any baseball stadiums that they would like to visit on a road trip.  It will produce a route and directions to each selected stadium.  It also allows storage of comments for each visit and store that information to local storage to act as a scrap book.'
   },
   {
     title: 'Salmon Cookie Shop ',
-    author: 'Nadia2',
+    author: 'Nadia Bahrami',
     collaborators: 'none',
     projectURL: 'http://nadiabahrami.github.io/cookie-stand',
     releaseDate: '12-13-15',

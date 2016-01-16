@@ -10,6 +10,16 @@ articleView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
+articleView.menuHide = function(){
+  $('nav').hide();
+  $('#menu').on('click', function(event){
+    event.preventDefault();
+    $('nav').slideToggle();
+
+  });
+};
+
 $(document).ready( function() {
   articleView.handleMainNav();
+  articleView.menuHide();
 });
