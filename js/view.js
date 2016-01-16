@@ -9,23 +9,22 @@ articleView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
-articleView.menuHide = function(){
-  if($(document).width()<640){
-    $('nav').hide();
-    $('#menu').on('click', function(event){
-      event.preventDefault();
-      $('nav').slideToggle();
-    });
-  }
+articleView.menuToggle = function(){
+  $('#menu').on('click', function(event){
+    event.preventDefault();
+    $('nav').slideToggle();
+  });
+};
+
+articleView.initIndexPage = function() {
+  Article.all.forEach(function(a){
+    $('#articles').append(a.toHtml());
+  });
+
+  articleView.handleMainNav();
 };
 
 $(document).ready( function() {
   articleView.handleMainNav();
-  articleView.menuHide();
-});
-
-$(window).resize(function() {
-  if ($(document).width()>640){
-    $('nav').show();
-  }
+  articleView.menuToggle();
 });

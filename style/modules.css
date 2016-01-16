@@ -1,5 +1,9 @@
 #menu{
-width:1.7em;
+  width:1.7em;
+}
+
+.main-nav{
+  display:none;
 }
 
 @media only screen and (min-width: 640px) and (max-width:1024px){
