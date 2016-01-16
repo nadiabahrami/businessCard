@@ -3,10 +3,27 @@
   <head>
     <link rel="stylesheet" href="vendor/style/normalize.css" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Overlock+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style/style.css" charset="utf-8">
+    <link rel="stylesheet" href="style/layout.css" charset="utf-8">
+    <link rel="stylesheet" href="style/modules.css" charset="utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <script id="ourBuild" type="text/x-handlebars-template">
+      <article class="" data-category="{{category}}" data-author="{{author}}">
+        <header>
+          <h1 id ="title">{{title}}</h1>
+          <div class="byline">
+            By <address>{{author}}{{collaborators}}</address>
+            <p>Project URL: <a href="projectURL" class="pURL">{{projectURL}}</a></p>
+          </div>
+        </header>
+        <section class="description">{{{description}}}</section>
+        <br>
+        <hr>
+      </article>
+    </script>
+    <title>Nadia's portfolio</title>
   </head>
   <body>
     <header id="top">
@@ -23,21 +40,11 @@
       <ul>
         <li class="tab" data-content="about"><a href="#">About</a></li>
         <li class="tab" data-content="articles"><a href="#">Projects</a></li>
-        <li><a href = "">Work Experience</a></li>
+        <!-- <li><a href = "">Work Experience</a></li> -->
       </ul>
     </nav>
     <main>
-      <section class="tab-content" id="articles">
-        <article class="template" data-category="cat">
-          <header>
-            <h1 id= 'title'></h1>
-            <div class="colab"></div>
-            <div class="date"></div>
-            <div class="url"></div>
-          </header>
-          <section class="description"></section>
-        </article>
-      </section>
+      <section class="tab-content" id="articles"></section>
       <section class = "tab-content" id="about">
         <h2>The Story So Far....</h2>
         <p>Nadia has a vast history and knoweldge base in the molecular biology field, previously researching cures for chronic kidney disease, organ regeneration, and cancer immunotherapy.</p>
@@ -49,6 +56,8 @@
       &copy; 2016 Nadia Bahrami
     </footer>
     <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+
     <script src="js/projects.js"></script>
     <script src ="js/app.js"></script>
     <script src="js/view.js"></script>
