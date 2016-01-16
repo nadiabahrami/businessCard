@@ -15,7 +15,7 @@
           <h1 id ="title">{{title}}</h1>
           <div class="byline">
             By <address>{{author}}{{collaborators}}</address>
-            <p>Project URL: <a href="projectURL" class="pURL">{{projectURL}}</a></p>
+            <p>Project URL: <a href="{{projectURL}}" class="pURL">{{projectURL}}</a></p>
           </div>
         </header>
         <section class="description">{{{description}}}</section>
@@ -60,7 +60,7 @@
     <script src ="/js/app.js"></script>
     <script src="/js/view.js"></script>
     <script>
-      Article.fetchAll();
+      Article.fetchAll(articleView.initIndexPage);
     </script>
   </body>
 </html>
