@@ -1,5 +1,5 @@
 (function(module){
-
+  var aboutController = {};
 
   aboutController.index = function(){
     ('.tab-content').hide();
