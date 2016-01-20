@@ -2,8 +2,9 @@
   var articlesController = {};
 
   articlesController.index = function(){
-    Aritcle.createTable();
     Article.fetchAll(articleView.initIndexPage);
+    $('.tab-content').hide();
+    $('#articles').fadeIn();
   };
   module.articlesController = articlesController;
 })(window);

@@ -27,7 +27,7 @@
   };
 
   $(document).ready( function() {
-    articleView.handleMainNav();
+    // articleView.handleMainNav();
     articleView.menuToggle();
   });
 
