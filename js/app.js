@@ -51,7 +51,7 @@
           var getETag = xhr.getResponseHeader('ETag');
           if(getETag === JSON.parse(localStorage.savedETag)) {
             Article.loadAll(JSON.parse(localStorage.rawData));
-            callback ? callback() : console.log("No callback");
+            callback ? callback() : console.log('No callback');
           }else{
             Article.serverGrab(callback);
           }
