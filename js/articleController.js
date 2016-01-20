@@ -1,16 +1,11 @@
 (function(module){
   var articlesController = {};
-  var count = 0;
+
+  Article.fetchAll(articleView.initIndexPage);
+
   articlesController.index = function(){
-    if(count ===0){
-      Article.fetchAll(articleView.initIndexPage);
-      $('.tab-content').hide();
-      $('#articles').fadeIn();
-      count ++;
-    }else{
-      $('.tab-content').hide();
-      $('#articles').fadeIn();
-    }
+    $('.tab-content').hide();
+    $('#articles').fadeIn();
   };
   module.articlesController = articlesController;
 })(window);
