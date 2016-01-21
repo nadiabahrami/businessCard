@@ -4,10 +4,11 @@
   repos.all = [];
 
   repos.request = function(callback){
-    $.ajax({
+    $.get({
       url:'https://api.github.com/users/nadiabahrami/repos'+ '?per_page=100&sort=updated',
-      type: 'GET',
-      headers:{'Authorization': 'token '+ token.githubToken}})
+      // type: 'GET',
+      // headers:{'Authorization': 'token '+ token.githubToken}})
+    })
     .done(function(data, message, xhr){
       repos.all = data;
       console.log(repos.all);
