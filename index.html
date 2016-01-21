@@ -15,7 +15,7 @@
           <h1 id ="title">{{title}}</h1>
           <div class="byline">
             By <address>{{author}}{{collaborators}}</address>
-            <p>Project URL: <a href="projectURL" class="pURL">{{projectURL}}</a></p>
+            <p>Project URL: <a href="{{projectURL}}" class="pURL">{{projectURL}}</a></p>
           </div>
         </header>
         <section class="description">{{{description}}}</section>
@@ -38,8 +38,8 @@
     </header>
     <nav class="main-nav">
       <ul>
-        <li class="tab" data-content="about"><a href="#">About</a></li>
-        <li class="tab" data-content="articles"><a href="#">Projects</a></li>
+        <li class="tab" data-content="about"><a href="/">About</a></li>
+        <li class="tab" data-content="articles"><a href="/projects">Projects</a></li>
         <!-- <li><a href = "">Work Experience</a></li> -->
       </ul>
     </nav>
@@ -50,6 +50,10 @@
         <p>Nadia has a vast history and knoweldge base in the molecular biology field, previously researching cures for chronic kidney disease, organ regeneration, and cancer immunotherapy.</p>
         <p>During that time the discrepancy between the ability to do research and communicate to the computer people to make the tools for research was difficult to bridge so Nadia decided to go back to school to learn programing</p>
         <p>So far she had learned HTML, Javascript, and CSS, and is continue to  learn and develop as a programer.  Click on projects to see examples of what she has done so far!</p>
+        <h3>Or checkout my github repos</h3>
+        <ul id="repoList">
+          <li>Repo goes here</li>
+        </ul>
       </section>
     </main>
     <footer>
@@ -57,10 +61,17 @@
     </footer>
     <script src="/vendor/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="/js/githubToken.js"></script>
+    <script src="vendor/page.js"></script>
+    <script src= "/js/repo.js"></script>
+    <script src="/js/repoView.js"></script>
     <script src ="/js/app.js"></script>
     <script src="/js/view.js"></script>
-    <script>
-      Article.fetchAll();
-    </script>
+    <script src="/js/aboutController.js"></script>
+    <script src="/js/articleController.js"></script>
+    <script src="/js/routes.js"></script>
+    <!-- <script>
+      Article.fetchAll(articleView.initIndexPage);
+    </script> -->
   </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "name": "business-card",
+  "version": "1.0.0",
+  "description": "My portoflio project attmepting to launch herkou",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-request-proxy": "^1.0.11",
+    "express0": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadiabahrami/businessCard.git"
+  },
+  "author": "Nadia Bahrami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadiabahrami/businessCard/issues"
+  },
+  "homepage": "https://github.com/nadiabahrami/businessCard#readme"
+}

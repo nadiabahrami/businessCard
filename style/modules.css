@@ -16,7 +16,7 @@
   #top h1{
     font-size:5em;
   }
-  li{
+  nav li{
     display:inline;
   }
 }
@@ -32,7 +32,7 @@
     font-size:8em;
   }
 
-  li{
+  nav li{
       display:inline;
   }
 }
