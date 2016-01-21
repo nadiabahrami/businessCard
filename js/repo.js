@@ -10,9 +10,18 @@
       headers:{'Authorization': 'token '+ token.githubToken}})
     .done(function(data, message, xhr){
       repos.all = data;
+      console.log(repos.all);
     })
     .done(callback);
+    console.log('completed request');
   };
+
+  repos.with = function(attr) {
+    return repos.all.filter(function(repo) {
+      return repo[attr];
+    });
+  };
+
 
   module.repos = repos;
 
