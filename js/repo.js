@@ -4,17 +4,9 @@
   repos.all = [];
 
   repos.request = function(callback){
-    $.get({
-      url:'https://api.github.com/users/nadiabahrami/repos'+ '?per_page=100&sort=updated',
-      // type: 'GET',
-      // headers:{'Authorization': 'token '+ token.githubToken}})
-    })
-    .done(function(data, message, xhr){
+    $.get('/github/users/nadiabahrami/repos'+ '?per_page=100'+'&sort=updated', function(data){
       repos.all = data;
-      console.log(repos.all);
-    })
-    .done(callback);
-    console.log('completed request');
+    }).done(callback);
   };
 
   repos.with = function(attr) {
