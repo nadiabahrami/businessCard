@@ -1,2 +1,5 @@
 node_modules/*
 node_modules
+
+githubToken.js
+js/githubToken.js
