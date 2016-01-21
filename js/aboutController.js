@@ -4,6 +4,7 @@
   aboutController.index = function(){
     $('.tab-content').hide();
     $('#about').fadeIn();
+    repos.request(repoView.index);
   };
 
 

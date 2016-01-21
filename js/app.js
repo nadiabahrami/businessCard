@@ -26,7 +26,6 @@
   };
 
   Article.serverGrab = function (callback){
-    console.log('serverGrab');
     $.ajax({
       url: '/data/projects.json',
       Type: 'GET',
@@ -44,27 +43,21 @@
   };
 
   Article.fetchAll = function(callback) {
-    console.log('fetchall');
     if (localStorage.rawData) {
-      console.log('first if');
       $.ajax({
         url: '/data/projects.json',
         Type: 'HEAD',
         success: function(data, message, xhr) {
           var getETag = xhr.getResponseHeader('ETag');
           if(getETag === JSON.parse(localStorage.savedETag)) {
-            console.log('second if');
             Article.loadAll(JSON.parse(localStorage.rawData));
-            console.log(localStorage.rawData);
             callback ? callback() : console.log('No callback');
           }else{
-            console.log('2nd else');
             Article.serverGrab(callback);
           }
         }
       });
     }else{
-      console.log('first else');
       Article.serverGrab(callback);
     };
   };
