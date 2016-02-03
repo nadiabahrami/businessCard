@@ -1,5 +1,13 @@
 [
   {
+    "title": "Baby Safe",
+    "author": "Nadia Bahrami",
+    "collaborators": ", Paul Sheridan, Kate Zurlo-Cuva, Raziyeh Bazargan",
+    "projectURL": "http:\/\/baby-safe.herokuapp.com",
+    "releaseDate": "12-29-15",
+    "description": "<p>Baby safe is a web app that will let the consumer search a UPC on a potential product they have inherited or purchased to see if there is a recall on that particular item.  It uses AJAX calls to the CPSC database to check the national recall status for that UPC and for the company that is pulled to retreive information that would help consumers mae a good decision.  This project uses jQuery, handlebars, Bootstrap, HTML5, and CSS.</p>"
+  },
+  {
     "title": "MLBucket list",
     "author": "Nadia Bahrami",
     "collaborators": ", Paul Sheridan, Kate Zurlo-Cuva, Shelly Y",
